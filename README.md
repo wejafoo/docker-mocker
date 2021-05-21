@@ -19,7 +19,7 @@ $  `REMOTE_ALIAS=stage  bingo --remote --alias=${REMOTE_ALIAS}`
 ### Extending Defaults
 
 **Local deploy**s mount up `./dist` to `/usr/share/nginx/html`.  So, you can just add new test routes(directories) and
-endpoints(files(with appropriate extensions)) to './dist' on the fly.
+endpoints(files(with appropriate extensions)) to `./dist` on the fly.
 
 **Remote deploy**s, by default, copy the `./dist` to `/usr/share/nginx/html` on the image for subsequent remote deployment.
 However, if you prepend your remote request route with `assets/`, requests can be proxied to the static files in your

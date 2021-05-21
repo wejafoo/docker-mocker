@@ -1,0 +1,17 @@
+
+
+version: '3.8'
+
+services:
+  mocker:
+    image: ${IMAGE_URL}
+    build:
+      context: .
+    container_name: ${CONTAINER}
+    restart: unless-stopped
+    env_file:
+      - ".env.local.yml"
+    volumes:
+      - ./dist/:/usr/share/nginx/html/
+    ports:
+      - ${TARGET_LOCAL_PORT}:${TARGET_REMOTE_PORT}

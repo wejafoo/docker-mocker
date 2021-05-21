@@ -1,0 +1,17 @@
+{
+    "FdTest":               false,
+    "FdVerbose":            false,
+    "FdBuildContext":       "docker",
+    "FdRepo":               "docker-mocker",
+    "FdService":            "mocker",
+    "FdRouteBase":          "/tapi/",
+    "FdTitle":              "Docker Mocker",
+    "FdTargetAlias":        "local",
+    "FdTargetDomain":       "weja.us",
+    "FdTargetImageTag":     "latest",
+    "FdTargetLocalPort":    "4000",
+    "FdTargetLogLevel":     "info",
+    "FdTargetProjectId":    "weja-us",
+    "FdTargetRealm":        "too.fb.",
+    "FdTargetRemotePort":   "8080"
+}
